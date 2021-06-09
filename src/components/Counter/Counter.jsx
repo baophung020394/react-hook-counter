@@ -1,7 +1,6 @@
-import React from "react";
 import PropTypes from "prop-types";
-import { useEffect } from "react";
-import Total from "../Total/Total";
+import React from "react";
+import './style.scss';
 
 Counter.propTypes = {
   counters: PropTypes.array,
@@ -36,8 +35,8 @@ function Counter(props) {
         {counters.map((counter) => (
           <li key={counter.id}>
             <span>{counter.value}</span>
-            <button onClick={() => handleDecrementClick(counter)}>-</button>
-            <button onClick={() => handleIncrementClick(counter)}>+</button>
+            <button className="increment" onClick={() => handleDecrementClick(counter)}>-</button>
+            <button className="decrement" onClick={() => handleIncrementClick(counter)}>+</button>
           </li>
         ))}
       </ul>

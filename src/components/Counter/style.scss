@@ -1,0 +1,31 @@
+.counter-controls {
+    span {
+        font-family: 'tahoma',sans-serif;
+        font-size: 20px;
+        color: #000;
+    }
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 10px;
+            button {
+                margin: 0 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 4px;
+                cursor: pointer;
+                color: #fff;
+                font-size: 16px;
+            }
+            .increment {
+                border: 1px solid green;
+                background-color: green;
+            }
+            .decrement {
+                border: 1px solid red;
+                background-color: red;
+            }
+        }
+    }
+
+}
